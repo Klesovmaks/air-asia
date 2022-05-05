@@ -1,10 +1,26 @@
 .footer {
   height: 146px;
   position: relative;
-  margin-top: 53px;
+  margin-top: auto;
 }
 
 .footer__container {
+  margin-top: 49px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__col {
+  display: flex;
+  align-items: center;
+}
+
+.footer__col--align--right {
+  align-items: flex-end;
+}
+
+.footer__container--border {
   border-top: 1px solid #454545;
 }
 
@@ -17,9 +33,7 @@
 }
 
 .social {
-  position: absolute;
-  top: 40px;
-  right: 445px;
+  margin-right: 74px;
 }
 
 .social__item {

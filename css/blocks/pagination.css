@@ -1,14 +1,20 @@
 .pagination {
-  text-align: center; 
+  align-items: center;
+  display: flex;
+  justify-content: center; 
   margin-top: 53px;
 }
 
 .pagination__info, .pagination__list {
-  display: inline-block;
   vertical-align: middle;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+}
+
+.pagination__list {
+  display: flex;
+  align-items: center;
 }
 
 .pagination__info {
@@ -16,8 +22,7 @@
 }
 
 .pagination__item {
-  display: inline-block;
-  vertical-align: middle;
+  text-align: center;
 }
 
 .pagination__item--active .pagination__link {
@@ -25,9 +30,19 @@
   color: #F5170E;
 }
 
+.pagination--dark .pagination__item--active .pagination__link {
+  background: #F5170E;
+  color: #FFFFFF;
+}
+
 .pagination__link:hover {
   background: #FFFFFF;
   color: #F5170E;
+}
+
+.pagination--dark .pagination__link:hover {
+  background: #F5170E;
+  color: #FFFFFF;
 }
 
 .pagination__link {

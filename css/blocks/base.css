@@ -10,7 +10,7 @@ html {
 body,
 html {
 	height: 100%;
-  background-color: #001821;
+  
 }
 
 body {
@@ -66,7 +66,7 @@ img {
 }
 
 .btn {
-  display: inline-block;
+  display: flex;
   background: #F5170E;
   border-radius: 35px;
   width: 168px;
@@ -93,6 +93,18 @@ img {
   padding: 18px 30px;
 }
 
+.btn--crema {
+  background: #FFFFFF;
+  border: 1px solid #F5170E;
+  border-radius: 35px;
+  color: #F5170E;
+}
+
+.btn--crema:hover {
+  background: #F5170E;
+  color: #fff;
+}
+
 .btn--light:hover {
   background: #F5170E;
   width: 135px;
@@ -109,6 +121,7 @@ img {
   font-size: 36px;
   line-height: 42px;
   display: flex;
+  margin-bottom: 51px;
 }
 
 .title--dark {
@@ -117,11 +130,12 @@ img {
 }
 
 .title--fire::after {
-  content: url("./img/flame.png");
+  content: url("../../img/flame.png");
   margin-left: 12px;
 }
 
 .wrapper {
+  background-color: #001821;
   overflow: hidden;
   min-height: 100%;
   display: flex;
@@ -129,11 +143,6 @@ img {
 }
 
 .wrapper__content {
-  flex: 1;
-  position: relative;
-}
-
-.wrapper__content--main{
   background: url("../../img/bgtop.png") center top no-repeat, url("../../img/bgbot.png") center bottom no-repeat;
 }
 
@@ -144,20 +153,25 @@ img {
   max-width: 1142px;
 }
 
+.hello__container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 600px;
+}
+
+.top-line__container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .logo, .menu, .menu__item, .contacts {
   display: inline-block;
 }
 
-.logo, .contacts {
-  margin-top: 29px;
-}
-
-.logo {
-  float: left;
-}
-
 .menu {
-  margin-top: 42px;
   margin-left: 79px;
 }
 
@@ -169,11 +183,6 @@ img {
   margin-right: 0px;
 }
 
-/* Будет удален за ненадобностью
-.menu__item--active .menu__link {
-  color: #DA0100;
-} */
-
 .menu__link {
   font-weight: 400;
   font-size: 14px;
@@ -182,10 +191,6 @@ img {
 
 .menu__link:hover {
   color: #DA0100;
-}
-
-.contacts {
-  float: right;
 }
 
 .contacts__phone {
@@ -203,4 +208,10 @@ img {
   line-height: 20px;
   text-decoration-line: underline;
   font-style: normal;
+}
+
+.page-content {
+  background: #FFFFFF;
+  color: #303030;
+  padding: 40px 0;
 }

@@ -1,0 +1,32 @@
+.service {
+  display: flex;
+  padding: 49px 0 0;
+}
+
+.service__img {
+  width: 30%;
+  margin-right: 7%;
+}
+
+.service__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 56px;
+}
+
+.service__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  margin-bottom: 28px;
+  color: #000000;
+}
+
+.sevice__desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #303030;
+}

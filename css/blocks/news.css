@@ -4,14 +4,15 @@
 
 .news__list {
   margin-top: 51px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .news__item {
-  display: inline-block;
   vertical-align: top;
-  width: 554px;
   position: relative;
-  margin-right: 10px;
+  margin-right: 25px;
+  flex: 1;
 }
 
 .news__img {

@@ -1,0 +1,36 @@
+.inner--section {
+  background: #fff;
+  color: #1A1B1E;
+  padding: 88px 0;
+}
+
+.inner--section--bg--grey {
+  background: #F2F2F2;
+}
+
+.inner--section__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: #1A1B1E;
+  margin-bottom: 99px;
+}
+
+.partners {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.partners__link {
+  text-decoration: none;
+  display: flex;
+  width: 270px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  filter: grayscale(100%);
+}
+
+.partners__link:hover {
+  filter: grayscale(0);
+}

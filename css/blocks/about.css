@@ -1,23 +1,28 @@
 .about {
   margin-top: 152px;
+  margin-bottom: 53px;
 }
+
+.about__container {
+  display: flex;
+}
+
 .about__container::before {
   content: "";
-
   width: 490px;
   height: 505px;
   background: url("../../img/gates.png") center center / cover no-repeat;
+  display: block;
 }
 
 .about__container::before, .about__content {
-  display: inline-block;
-  vertical-align: top;
+  display: block;
 }
 
 .about__content {
   margin-left: -142px;
   margin-top: 95px;
-  width: 785px;
+  max-width: 785px;
   height: 455px;
   background: url("../../img/mountains.png");
   padding: 70px 81px;
