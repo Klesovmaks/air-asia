@@ -83,3 +83,62 @@
   font-weight: 700;
 }
 
+.contacts__dropdown {
+  position: relative;
+  text-align: end;
+}
+
+.contacts__dropdown:hover .contacts__schedule--dropdown{
+  left: 33px;
+  opacity: 1;
+}
+
+.contacts__schedule--dropdown {
+  position: absolute;
+  background: #CDD1D2;
+  width: 160px;
+  height: 70px;
+  opacity: 0.8;
+  border-radius: 5px;
+  top: 100%;
+  opacity: 0;
+  transition: opacity .3s;
+  left: 3000000px;
+  margin-top: 10px;
+}
+
+.contacts__schedule--dropdown:before {
+  content: "";
+  display: block;
+  height: 30px;
+  left: 0;
+  right: 0;
+  top: -29px;
+  position: absolute;
+}
+
+.contacts__schedule__list {
+  padding: 15px 19px;
+}
+
+.contacts__schedule__item {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 21px;
+  color: #1E1F20;
+  text-align: start;
+}
+
+.contacts__schedule__item--bold {
+  font-weight: 700;
+}
+
+.contacts__schedule--triangle {
+  border: 10px solid transparent;
+  width: 0px;
+  height: 0px;
+  border-bottom-color: #CDD1D2;
+  border-top-width: 0px;
+  display: flex;
+}

@@ -38,11 +38,13 @@
 .pagination__link:hover {
   background: #FFFFFF;
   color: #F5170E;
+  transition: .3s;
 }
 
 .pagination--dark .pagination__link:hover {
   background: #F5170E;
   color: #FFFFFF;
+  transition: .3s;
 }
 
 .pagination__link {

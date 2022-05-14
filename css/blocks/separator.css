@@ -1,0 +1,18 @@
+.separator {
+  background: url("../../img/reviews/couple.png") right 30% bottom no-repeat, url("../../img/reviews/Rectangle.png") center center no-repeat;
+  min-height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.separator__content {
+  max-width: 47%;
+}
+
+.separator__title {
+  font-size: 48px;
+  color: #FFFFFF;
+  font-weight: 600;
+  line-height: 56px;
+}
